@@ -1,0 +1,17 @@
+Return-Path: <test.test@opensrc.fr>
+Received: from webb.opensrc.fr ([unix socket])
+	 by webb (Cyrus git2.5+0-Debian-2.5~dev2015021301-0~kolab2) with LMTPA;
+	 Fri, 05 Feb 2016 15:59:14 +0100
+X-Sieve: CMU Sieve 2.4
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII;
+ format=flowed
+Content-Transfer-Encoding: 7bit
+Date: Fri, 05 Feb 2016 15:59:14 +0100
+From: "test, test" <test.test@opensrc.fr>
+To: "test, test" <test.test@opensrc.fr>
+Subject: fg
+Message-ID: <24ed6aba2b1dd048fd6deca0dfc43386@opensrc.fr>
+X-Sender: test.test@opensrc.fr
+
+gf

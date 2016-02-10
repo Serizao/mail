@@ -1,0 +1,24 @@
+Return-Path: <test.test@opensrc.fr>
+Received: from webb.opensrc.fr ([unix socket])
+	 by webb (Cyrus git2.5+0-Debian-2.5~dev2015021301-0~kolab2) with LMTPA;
+	 Wed, 10 Feb 2016 11:22:07 +0100
+X-Sieve: CMU Sieve 2.4
+X-Quarantine-ID: <s-npY_KsgQH1>
+X-Amavis-Alert: BAD HEADER SECTION, Missing required header field: "Date"
+Received: from CS005568 (unknown [37.97.106.182])
+ by webb.opensrc.fr (Postfix) with ESMTP id 5ABB718B8A
+ for <test.test@opensrc.fr>; Wed, 10 Feb 2016 11:22:05 +0100 (CET)
+From: Microsoft Outlook <test.test@opensrc.fr>
+To: =?utf-8?B?dA==?= <test.test@opensrc.fr>
+Subject: =?utf-8?B?TWVzc2FnZSB0ZXN0IE1pY3Jvc29mdCBPdXRsb29r?=
+MIME-Version: 1.0
+Content-Type: text/html;
+    charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <20160210102207.8E0F818B8A@webb.opensrc.fr>
+Date: Wed, 10 Feb 2016 11:22:07 +0100 (CET)
+
+Ce message =C3=A9lectronique est envoy=C3=A9 automatiquement par Microsof=
+t Outlook pendant la v=C3=A9rification des param=C3=A8tres de votre compt=
+e.
+

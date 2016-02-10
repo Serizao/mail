@@ -1,0 +1,41 @@
+.left-men
+{
+	background-color:#DADFE1;
+}
+
+
+.top-men
+{
+	background-color: #2574A9;
+}
+
+
+.mail_preview
+{
+	position:fixed;
+	bottom:-20px;
+
+}
+.mail_preview-b
+{
+	height:auto;
+	
+}
+.body
+{
+
+	height:auto;
+	overflow: scroll;
+	bottom:0px;
+
+}
+
+#preview
+{	position:relative;
+	height:auto;
+	overflow: scroll;
+}
+.full
+{	
+	height:100%;
+}
