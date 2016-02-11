@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap 101 Template</title>
-
+    <script src="js/jquery.min.js"></script>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -17,6 +17,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="css/css.css" rel="stylesheet">
+    <script src="js/interact.min.js"></script>
   </head>
   <body>
 
@@ -25,30 +26,20 @@
           <div class="row">
             <div class="col-md-12  top-men">
               <div class="text-right">
-                <h3><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></h3>
+                <h3>
+                  <a href="index.php"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
+                  <a href="index.php?action=parametre"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+                </h3>
               </div>
             </div>
         </div>
       </div>
 <!-- end top menu  --> 
 
-      <div class="container-fluid">
-          <div class="row">
-          <!-- begin right menu  --> 
-              <div class="col-md-2 left-men">
-                <ul class="list-group">
-                         <a class="list-group-item" href="#p"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>  Ecrire un nouveau message</a>
-                      
-                        <a  class="list-group-item" href="index.php"><span class="glyphicon glyphicon-inbox" aria-hidden="true"></span>  Boite de réception</a>
-                       
-                        <a class="list-group-item" href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>  Boite d'envoie</a>
-                       
-                       <a class="list-group-item" href="#"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>  Messages supprimés</a>
-                </ul>
-              </div>
+   
           <!-- end right menu  --> 
           <!-- begin body mail  --> 
-              <div class="col-md-10 full">
+              <div class="col-md-12 no-padding" >
                   
                   
                     <?php 
@@ -58,19 +49,42 @@
 
 
 
+                        
                       }
                       else
                       {
-                       echo '<div class="body"> <table class="table table-hover ><thead><tr> <th>Objet</th> <th>De</th> <th>Pour</th><th>date</th>  </tr> </thead> <tbody>';
-                         require_once('function/function.php');
-                          $mail=new mail();
-                          $mail->mail_check(); 
-                          echo '
-                           </tbody> </table></div>
-                          
                         
-                        <div id="preview">
-                        </div></div>';
+                        include("include/mail-men.php");
+                      
+                         echo '<script>
+                         $(document).ready(function() {
+                          refresh_mail_view()
+
+
+                         });
+
+                         </script>
+                          ';
+              
+                          echo '
+            <div  id="list-mail"></div>
+                        <div id="preview" class="half" >
+
+                         <div class="panel panel-default preview">
+                        <div class="panel-heading">
+                         <div class="text-right" ><button onclick="close_preview()" type="button" class="btn btn-default"><span style="color:black" class="glyphicon glyphicon-remove" aria-hidden="true"></span></button></div>
+                        </div>
+                        <div class="panel-body mail_preview-b">';
+                          
+                        echo'
+                     
+                        
+                      </div>
+                </div>
+            
+          </div>
+      </div>
+                        </div></div></div>';
                        
                       }
                     
@@ -89,9 +103,10 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.min.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
     <script src="js/js.js"></script>
   </body>
 </html>
